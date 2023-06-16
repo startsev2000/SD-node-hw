@@ -7,5 +7,7 @@ ws.on('open', function open() {
 });
 
 ws.on('message', function incoming(data) {
-    console.log(data);
+    let num = parseInt(data.toString());
+    let char = String.fromCharCode(num);
+    console.log(char);
 });
